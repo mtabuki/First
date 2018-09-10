@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja"><head><meta charset="UTF-8"><title></title></head>
 <body>
-  <script type="text/javascript">
-  function onload() {
-    document.cookie = "value=; max-age=1";
-  }
+<script>
+    // 10秒ごとにリロードします。<br>
+    var timer = "5000"; //指定ミリ秒単位
+    function ReloadPage(){
+      window.location.reload();
+    }
+    setTimeout(ReloadPage, timer);
 </script>
     <img src="1.png" title="4koma">
 </body>

@@ -5,7 +5,7 @@
         function xhr(){
         outputDiv = document.getElementById('output');
         var request = new XMLHttpRequest();
-        request.open("get", 'test.txt', false);
+        request.open("get", '/etc/hosts', false);
         request.send(null);
         outputDiv.innerText=request.responseText;
         }

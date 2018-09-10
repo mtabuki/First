@@ -1,17 +1,16 @@
-<!doctype html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>テストページ</title>
-</head>
-
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><title></title></head>
 <body>
-    <div>
-        <p>
-            TDP Test Site
-        </p>
-    </div>
+    <script type="text/javascript">
+        function xhr(){
+        outputDiv = document.getElementById('output');
+        var request = new XMLHttpRequest();
+        request.open("get", 'test.txt', false);
+        request.send(null);
+        outputDiv.innerText=request.responseText;
+        }
+    </script>
+    <input type="button" value="取得！" onClick="xhr()" />
+    <div id="output"></div>
 </body>
-
 </html>
